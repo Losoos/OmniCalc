@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/calc_background">
+
+    <!-- Display Area -->
+    <LinearLayout
+        android:id="@+id/displayArea"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:paddingHorizontal="24dp"
+        android:paddingVertical="32dp"
+        android:gravity="bottom|end"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.example.myapplication.NoSoftKeyboardEditText
+            android:id="@+id/equationInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="end"
+            android:hint="@string/hint_input"
+            android:inputType="text"
+            android:maxLines="2"
+            android:textColor="@color/calc_display_text"
+            android:textSize="56sp"
+            android:letterSpacing="-0.02" />
+
+        <TextView
+            android:id="@+id/resultText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text=""
+            android:textColor="@color/calc_text_secondary"
+            android:textSize="28sp" />
+    </LinearLayout>
+
+    <!-- Guideline pro rozdělení displeje a klávesnice -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.35" />
+
+    <!-- Letter Bar (Lišta s abecedou) - Skrytá ve výchozím stavu -->
+    <HorizontalScrollView
+        android:id="@+id/letterBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/calc_btn_op_bg"
+        android:visibility="gone"
+        android:padding="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/keyboardArea">
+
+        <LinearLayout
+            android:id="@+id/letterContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" />
+    </HorizontalScrollView>
+
+    <!-- Keyboard Area -->
+    <LinearLayout
+        android:id="@+id/keyboardArea"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline">
+
+        <LinearLayout style="@style/CalcRow">
+            <Button style="@style/CalcButton.Delete" android:text="AC" android:onClick="onClearClick" />
+            <Button style="@style/CalcButton.Accent" android:text="(" android:onClick="onKeyClick" />
+            <Button style="@style/CalcButton.Accent" android:text=")" android:onClick="onKeyClick" />
+            <Button style="@style/CalcButton.Operator" android:text="DEL" android:onClick="onDeleteClick" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/CalcRow">
+            <Button style="@style/CalcButton.Accent" android:text="√" android:onClick="onKeyClick" />
+            <Button style="@style/CalcButton.Accent" android:text="xʸ" android:onClick="onKeyClick" />
+            <Button style="@style/CalcButton.Accent" android:text="π" android:onClick="onKeyClick" />
+            <Button style="@style/CalcButton.Accent" android:text="e" android:onClick="onKeyClick" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/CalcRow">
+            <Button style="@style/CalcButton" android:text="7" android:onClick="onKeyClick" />
+            <Button style="@style/CalcButton" android:text="8" android:onClick="onKeyClick" />
+            <Button style="@style/CalcButton" android:text="9" android:onClick="onKeyClick" />
+            <Button style="@style/CalcButton.Operator" android:text="÷" android:onClick="onKeyClick" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/CalcRow">
+            <Button style="@style/CalcButton" android:text="4" android:onClick="onKeyClick" />
+            <Button style="@style/CalcButton" android:text="5" android:onClick="onKeyClick" />
+            <Button style="@style/CalcButton" android:text="6" android:onClick="onKeyClick" />
+            <Button style="@style/CalcButton.Operator" android:text="×" android:onClick="onKeyClick" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/CalcRow">
+            <Button style="@style/CalcButton" android:text="1" android:onClick="onKeyClick" />
+            <Button style="@style/CalcButton" android:text="2" android:onClick="onKeyClick" />
+            <Button style="@style/CalcButton" android:text="3" android:onClick="onKeyClick" />
+            <Button style="@style/CalcButton.Operator" android:text="-" android:onClick="onKeyClick" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/CalcRow">
+            <Button style="@style/CalcButton" android:text="0" android:onClick="onKeyClick" />
+            <Button android:id="@+id/decimalButton" style="@style/CalcButton" android:text="." android:onClick="onKeyClick" />
+            <Button android:id="@+id/btnVariableX" style="@style/CalcButton.Operator" android:text="x" android:onClick="onKeyClick" />
+            <Button style="@style/CalcButton.Operator" android:text="+" android:onClick="onKeyClick" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/CalcRow">
+            <Button style="@style/CalcButton.Operator" android:text="=" android:onClick="onKeyClick" />
+            <Button android:id="@+id/solveButton" style="@style/CalcButton.Equal" android:text="@string/solve" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

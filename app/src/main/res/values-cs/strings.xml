@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Kalkulačka rovnic</string>
+    <string name="solve">Vypočítat</string>
+    <string name="error_msg">Nelze vypočítat</string>
+    <string name="hint_input">Zadejte rovnice (např. x+y=10; x-y=2)</string>
+    <string name="truth">Pravda</string>
+    <string name="falsehood">Nepravda</string>
+    <string name="any_value">libovolné</string>
+</resources>

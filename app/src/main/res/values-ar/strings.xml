@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">حاسبة المعادلات</string>
+    <string name="solve">حل</string>
+    <string name="error_msg">غير قابل للحساب</string>
+    <string name="hint_input">أدخل المعادلات (مثل x+y=10; x-y=2)</string>
+    <string name="truth">صحيح</string>
+    <string name="falsehood">خطأ</string>
+    <string name="any_value">أي قيمة</string>
+</resources>

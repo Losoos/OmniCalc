@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Google Calculator Material You Palette -->
+    <color name="calc_background">#F7F9FB</color>
+    <color name="calc_display_text">#1A1C1E</color>
+    <color name="calc_text_secondary">#42474E</color>
+
+    <!-- Button Colors -->
+    <color name="calc_btn_num_bg">#FFFFFF</color>
+    <color name="calc_btn_num_text">#1A1C1E</color>
+
+    <color name="calc_btn_op_bg">#E2E2E6</color>
+    <color name="calc_btn_op_text">#001D35</color>
+
+    <color name="calc_btn_accent_bg">#D3E4FF</color>
+    <color name="calc_btn_accent_text">#001D35</color>
+
+    <color name="calc_btn_eq_bg">#0061A4</color>
+    <color name="calc_btn_eq_text">#FFFFFF</color>
+
+    <color name="calc_btn_del_bg">#FAD8D6</color>
+    <color name="calc_btn_del_text">#3F0002</color>
+</resources>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Gleichungsrechner</string>
+    <string name="solve">Lösen</string>
+    <string name="error_msg">Nicht berechenbar</string>
+    <string name="hint_input">Gleichungen eingeben (z.B. x+y=10; x-y=2)</string>
+    <string name="truth">Wahr</string>
+    <string name="falsehood">Falsch</string>
+    <string name="any_value">beliebig</string>
+</resources>

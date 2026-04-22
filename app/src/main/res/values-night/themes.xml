@@ -1,0 +1,10 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.MyApplication" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/calc_btn_eq_bg</item>
+        <item name="colorPrimaryVariant">@color/calc_btn_eq_bg</item>
+        <item name="colorOnPrimary">@color/calc_btn_eq_text</item>
+        <item name="android:statusBarColor">@color/calc_background</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+</resources>

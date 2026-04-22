@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Calculadora de Ecuaciones</string>
+    <string name="solve">Resolver</string>
+    <string name="error_msg">No se puede calcular</string>
+    <string name="hint_input">Ingrese ecuaciones (p. ej. x+y=10; x-y=2)</string>
+    <string name="truth">Verdad</string>
+    <string name="falsehood">Falso</string>
+    <string name="any_value">cualquier</string>
+</resources>

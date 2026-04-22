@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Calculatrice d\'Équations</string>
+    <string name="solve">Résoudre</string>
+    <string name="error_msg">Calcul impossible</string>
+    <string name="hint_input">Entrez des équations (ex. x+y=10; x-y=2)</string>
+    <string name="truth">Vrai</string>
+    <string name="falsehood">Faux</string>
+    <string name="any_value">n\'importe quel</string>
+</resources>

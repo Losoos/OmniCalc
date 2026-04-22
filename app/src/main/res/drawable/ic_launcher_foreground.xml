@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Symbol rovnice: x = ? -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M30,40 L45,40 M30,50 L45,50 M60,35 L75,55 M75,35 L60,55 M40,75 Q45,65 55,75 T70,75"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="5"
+        android:strokeLineCap="round"/>
+
+    <!-- X -->
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="6"
+        android:strokeLineCap="round"
+        android:pathData="M25,25 L45,45 M45,25 L25,45" />
+
+    <!-- Rovná se -->
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="6"
+        android:strokeLineCap="round"
+        android:pathData="M55,30 L80,30 M55,40 L80,40" />
+
+    <!-- Otazník -->
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="6"
+        android:strokeLineCap="round"
+        android:pathData="M45,65 C45,55 65,55 65,65 C65,70 55,72 55,80 M55,90 L55,92" />
+</vector>
