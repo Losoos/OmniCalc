@@ -2,6 +2,8 @@
 
 Modern Material You calculator for Android that solves linear equations and systems of equations.
 
+[![Download APK](https://img.shields.io/badge/Download-APK-green?style=for-the-badge&logo=android)](https://github.com/filip/MyApplication/releases/download/v1.0.0/calc-v1.0.0.apk)
+
 ## Features / Funkce
 * **Equation Solver**: Solves linear equations and systems (separated by `;`).
 * **Multi-variable support**: Handles variables `a-z` (long-press `x` to show the variable bar).
