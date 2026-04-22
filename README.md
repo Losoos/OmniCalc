@@ -3,9 +3,9 @@
 Modern Material You calculator for Android that solves linear equations and systems of equations.
 
 ## Latest Version / Nejnovější verze
-[![Download v1.0.0](https://img.shields.io/badge/Download-v1.0.0-green?style=for-the-badge&logo=android)](https://github.com/filip/MyApplication/releases/download/v1.0.0/calc-v1.0.0.apk)
+[![Download v1.0.0](https://img.shields.io/badge/Download-v1.0.0-green?style=for-the-badge&logo=android)](https://github.com/Losoos/-Equation-calculator-for-android/releases/download/v1.0.0/calc-v1.0.0.apk)
 
-[See all versions / Všechny verze](https://github.com/filip/MyApplication/releases)
+[See all versions / Všechny verze](https://github.com/Losoos/-Equation-calculator-for-android/releases)
 
 ## Features / Funkce
 * **Equation Solver**: Solves linear equations and systems (separated by `;`).
