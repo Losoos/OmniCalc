@@ -1,21 +1,28 @@
 name: iOS Build
 on:
-  workflow_dispatch: 
+  workflow_dispatch: # Umožní spustit build ručně tlačítkem
 
 jobs:
   build:
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-java@v4
+
+      - name: Set up JDK 21
+        uses: actions/setup-java@v4
         with:
           distribution: 'zulu'
-          java-version: '17'
+          java-version: '21'
       
+      # TATO ČÁST JE DŮLEŽITÁ: Povolí GitHubu spustit Gradle
+      - name: Make gradlew executable
+        run: chmod +x gradlew
+
       - name: Build for iOS Simulator
-        run: ./gradlew :composeApp:iosX64Binaries 
+        run: ./gradlew :composeApp:iosX64Binaries # Pokud se tvůj modul nejmenuje composeApp, přepiš to zde
+
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
         with:
           name: ios-app-simulator
-          path: composeApp/build/bin/iosX64/debugExe/ 
+          path: composeApp/build/bin/iosX64/debugExe/
