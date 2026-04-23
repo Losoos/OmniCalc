@@ -3,7 +3,7 @@
 Modern Material You calculator for Android that solves linear equations and systems of equations.
 
 ## Latest Version / Nejnovější verze
-[![Download v1.0.0](https://img.shields.io/badge/Download-v1.0.0-green?style=for-the-badge&logo=android)](https://github.com/Losoos/-Equation-calculator-for-android/releases/download/v1.0.0/calc-v1.0.0.apk)
+[![Download v1.0.0](https://img.shields.io/badge/Download-v1.0.1-green?style=for-the-badge&logo=android)](https://github.com/Losoos/-Equation-calculator-for-android/releases/download/v1.0.1/calc_1.0.1.apk)
 
 [See all versions / Všechny verze](https://github.com/Losoos/-Equation-calculator-for-android/releases)
 
@@ -22,8 +22,7 @@ Modern Material You calculator for Android that solves linear equations and syst
 ## Usage / Použití
 1. Enter your equation (e.g., `2x + 5 = 15`).
 2. Press the `?` button to solve.
-3. For systems, separate equations with `;` (e.g., `x+y=10; x-y=2`).
-4. Long-press the `x` button to choose other variables.
+3. Long-press the `x` button to choose other variables.
 
 ---
 
