@@ -22,8 +22,7 @@ Modern Material You calculator for Android that solves linear equations and syst
 ## Usage / Použití
 1. Enter your equation (e.g., `2x + 5 = 15`).
 2. Press the `?` button to solve.
-3. For systems, separate equations with `;` (e.g., `x+y=10; x-y=2`).
-4. Long-press the `x` button to choose other variables.
+3. Long-press the `x` button to choose other variables.
 
 ---
 
