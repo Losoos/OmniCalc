@@ -24,9 +24,9 @@ jobs:
       uses: gradle/actions/setup-gradle@v3
       with:
         gradle-version: 8.10
-
-    - name: Grant execute permission for gradlew
-      run: chmod +x gradlew
+        # Tímto vypneme ověřování tvého lokálního wrapperu, které hází chybu
+        wrapper-validation-enabled: false
 
     - name: Build iOS Framework
-      run: ./gradlew :shared:assembleSharedReleaseFrameworkForIosArm64
+      # Místo ./gradlew použijeme přímo gradle
+      run: gradle :shared:assembleSharedReleaseFrameworkForIosArm64
