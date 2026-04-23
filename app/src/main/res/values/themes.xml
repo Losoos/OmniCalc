@@ -44,7 +44,7 @@
     <style name="CalcButton.Equal">
         <item name="backgroundTint">@color/calc_btn_eq_bg</item>
         <item name="android:textColor">@color/calc_btn_eq_text</item>
-        <item name="android:textSize">32sp</item>
+        <item name="android:textSize">22sp</item>
     </style>
 
     <style name="CalcButton.Delete">

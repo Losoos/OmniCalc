@@ -1,4 +1,4 @@
-package com.example.myapplication
+package cz.losoos.calculator
 
 import android.os.Bundle
 import android.view.ContextThemeWrapper
@@ -6,7 +6,7 @@ import android.view.View
 import android.widget.Button
 import android.widget.LinearLayout
 import androidx.appcompat.app.AppCompatActivity
-import com.example.myapplication.databinding.ActivityMainBinding
+import cz.losoos.calculator.databinding.ActivityMainBinding
 import com.google.android.material.button.MaterialButton
 
 class MainActivity : AppCompatActivity() {

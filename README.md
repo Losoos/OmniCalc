@@ -33,7 +33,7 @@ Modern Material You calculator for Android that solves linear equations and syst
 4. Podržením tlačítka `x` zobrazíte lištu s dalšími písmeny.
 
 ## Author / Autor
-Created by **Filip**
+Created by **Losoos**
 
 ## License / Licence
 Licensed under the Apache License, Version 2.0. See [LICENSE](LICENSE) for details.

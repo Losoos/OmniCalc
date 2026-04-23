@@ -17,7 +17,7 @@
         app:layout_constraintBottom_toTopOf="@+id/guideline"
         app:layout_constraintTop_toTopOf="parent">
 
-        <com.example.myapplication.NoSoftKeyboardEditText
+        <cz.losoos.calculator.NoSoftKeyboardEditText
             android:id="@+id/equationInput"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

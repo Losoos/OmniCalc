@@ -1,4 +1,4 @@
-package com.example.myapplication
+package cz.losoos.calculator
 
 import android.content.Context
 import java.util.Locale
