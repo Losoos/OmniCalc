@@ -32,6 +32,19 @@ Modern Material You calculator for Android that solves linear equations and syst
 3. Soustavy rovnic oddělujte středníkem `;` (např. `x+y=10; x-y=2`).
 4. Podržením tlačítka `x` zobrazíte lištu s dalšími písmeny.
 
+## Data Source & Disclaimer / Zdroj dat a prohlášení
+* **Source**: Exchange rates are provided by the **European Central Bank (ECB)**.
+* **Update**: Data is updated daily (usually around 16:00 CET).
+* **Disclaimer**: This application is for informational purposes only. The author is not responsible for any financial losses caused by the use of this data.
+* **Official Website**: [ECB Statistical Data Warehouse](https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_fx_ref/html/index.en.html)
+
+---
+
+* **Zdroj**: Směnné kurzy jsou poskytovány **Evropskou centrální bankou (ECB)**.
+* **Aktualizace**: Data jsou aktualizována denně (obvykle kolem 16:00 SEČ).
+* **Prohlášení**: Tato aplikace slouží pouze pro informační účely. Autor nenese odpovědnost za případné finanční ztráty způsobené použitím těchto dat.
+* **Oficiální stránky**: [ECB Statistical Data Warehouse](https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_fx_ref/html/index.en.html)
+
 ## Author / Autor
 Created by **Losoos**
 

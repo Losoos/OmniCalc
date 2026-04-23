@@ -6,8 +6,12 @@
     <string name="truth">Pravda</string>
     <string name="falsehood">Nepravda</string>
     <string name="any_value">libovolné</string>
-    <string name="menu_title">Nástroje Losoos</string>
+    <string name="menu_title">Nástroje</string>
     <string name="menu_calculator_desc">Vědecká kalkulačka</string>
     <string name="menu_currency_title">Převodník měn</string>
-    <string name="menu_currency_desc">Aktuální kurzy ECB</string>
+    <string name="tab_all">Vše</string>
+    <string name="tab_europe">Evropa</string>
+    <string name="tab_america">Amerika</string>
+    <string name="tab_asia">Asie</string>
+    <string name="tab_others">Ostatní</string>
 </resources>

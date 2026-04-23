@@ -13,11 +13,13 @@
         <com.google.android.material.appbar.MaterialToolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            app:layout_constraintTop_toTopOf="parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize"
+            android:fitsSystemWindows="true"
             app:navigationIcon="@drawable/ic_menu"
             app:title="@string/app_name"
-            app:titleTextColor="@color/calc_display_text" />
+            app:titleTextColor="@color/calc_display_text"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <!-- Display Area -->
         <LinearLayout
@@ -54,7 +56,6 @@
                 android:textSize="28sp" />
         </LinearLayout>
 
-        <!-- Guideline pro rozdělení displeje a klávesnice -->
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline"
             android:layout_width="wrap_content"
@@ -62,7 +63,6 @@
             android:orientation="horizontal"
             app:layout_constraintGuide_percent="0.38" />
 
-        <!-- Letter Bar (Lišta s abecedou) - Skrytá ve výchozím stavu -->
         <HorizontalScrollView
             android:id="@+id/letterBar"
             android:layout_width="match_parent"
@@ -79,7 +79,6 @@
                 android:orientation="horizontal" />
         </HorizontalScrollView>
 
-        <!-- Keyboard Area -->
         <LinearLayout
             android:id="@+id/keyboardArea"
             android:layout_width="match_parent"
@@ -143,6 +142,7 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="start"
+        android:fitsSystemWindows="true"
         app:menu="@menu/drawer_menu"
         app:headerLayout="@layout/nav_header"
         android:background="@color/calc_background" />

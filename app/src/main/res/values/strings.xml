@@ -6,11 +6,15 @@
     <string name="truth">True</string>
     <string name="falsehood">False</string>
     <string name="any_value">any</string>
-    <string name="menu_title">Losoos Tools</string>
+    <string name="menu_title">Tools</string>
     <string name="menu_calculator_desc">Scientific Solver</string>
     <string name="menu_currency_title">Currency Converter</string>
     <string name="menu_currency_desc">Real-time ECB rates</string>
     <string name="nav_calculator">Calculator</string>
     <string name="nav_currency">Currency Converter</string>
-    <string name="nav_home">Home</string>
+    <string name="tab_all">All</string>
+    <string name="tab_europe">Europe</string>
+    <string name="tab_america">America</string>
+    <string name="tab_asia">Asia</string>
+    <string name="tab_others">Others</string>
 </resources>
