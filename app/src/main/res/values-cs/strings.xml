@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Kalkulačka rovnic</string>
+    <string name="app_name">OmniCalc</string>
     <string name="solve">Vypočítat</string>
     <string name="error_msg">Nelze vypočítat</string>
     <string name="hint_input">Zadejte rovnice (např. x+y=10; x-y=2)</string>

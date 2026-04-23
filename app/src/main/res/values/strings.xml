@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Equation Calculator</string>
+    <string name="app_name">OmniCalc</string>
     <string name="solve">Solve</string>
     <string name="error_msg">Calculation not possible</string>
     <string name="hint_input">Enter equations (e.g. x+y=10; x-y=2)</string>

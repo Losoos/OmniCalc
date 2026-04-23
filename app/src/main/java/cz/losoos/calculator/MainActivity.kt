@@ -26,6 +26,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
 import cz.losoos.calculator.databinding.ActivityMainBinding
 import com.google.android.material.button.MaterialButton
+import cz.losoos.calculator.SharedSolver
 
 class MainActivity : AppCompatActivity() {
 
@@ -63,7 +64,14 @@ class MainActivity : AppCompatActivity() {
         binding.solveButton.setOnClickListener {
             val input = binding.equationInput.text.toString().trim()
             if (input.isNotEmpty()) {
-                binding.resultText.text = Solver.solve(input, this)
+                // Zkusíme nejdříve sdílený solver pro jednoduché výpočty
+                val sharedResult = if (!input.contains("=")) SharedSolver.solve(input) else null
+                
+                if (sharedResult != null) {
+                    binding.resultText.text = sharedResult.toString()
+                } else {
+                    binding.resultText.text = Solver.solve(input, this)
+                }
             } else {
                 binding.resultText.text = getString(R.string.error_msg)
             }
