@@ -35,5 +35,11 @@ Modern Material You calculator for Android that solves linear equations and syst
 ## Author / Autor
 Created by **Losoos**
 
+## Recent Updates / Poslední změny
+* **Package Cleanup**: Reorganized the project structure to the professional `cz.losoos.calculator` namespace, removing all default "example" references.
+* **Test Refactoring**: Updated unit and instrumentation tests to match the new package structure.
+* **Repository Cleanup**: Removed IDE-specific files (`.idea/`) from the repository to ensure a clean codebase.
+* **UI Fix**: Adjusted button text sizes to ensure "Vypočítat" fits perfectly on all screens.
+
 ## License / Licence
 Licensed under the Apache License, Version 2.0. See [LICENSE](LICENSE) for details.
