@@ -1,11 +1,13 @@
 package cz.losoos.calculator
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.ContextThemeWrapper
 import android.view.View
 import android.widget.Button
 import android.widget.LinearLayout
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.GravityCompat
 import cz.losoos.calculator.databinding.ActivityMainBinding
 import com.google.android.material.button.MaterialButton
 
@@ -17,6 +19,28 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        setSupportActionBar(binding.toolbar)
+        binding.toolbar.setNavigationOnClickListener {
+            binding.drawerLayout.openDrawer(GravityCompat.START)
+        }
+
+        binding.navigationView.setNavigationItemSelectedListener { menuItem ->
+            when (menuItem.itemId) {
+                R.id.nav_calculator -> {
+                    binding.drawerLayout.closeDrawer(GravityCompat.START)
+                }
+                R.id.nav_currency -> {
+                    startActivity(Intent(this, CurrencyActivity::class.java))
+                    finish()
+                }
+                R.id.nav_home -> {
+                    startActivity(Intent(this, MenuActivity::class.java))
+                    finish()
+                }
+            }
+            true
+        }
 
         setupLetterBar()
 

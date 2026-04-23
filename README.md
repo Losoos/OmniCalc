@@ -11,6 +11,7 @@ Modern Material You calculator for Android that solves linear equations and syst
 * **Equation Solver**: Solves linear equations and systems (separated by `;`).
 * **Multi-variable support**: Handles variables `a-z` (long-press `x` to show the variable bar).
 * **Scientific functions**: Supports `√`, `^`, `π`, `e`.
+* **Currency Converter**: Real-time currency conversion using official rates from the European Central Bank.
 * **Multi-language**: Support for 10 languages including Czech, English, Slovak, German, Spanish, French, Arabic, Hindi, Chinese, and Japanese.
 * **Localization**: Automatic decimal separator (comma/dot) and digit support based on locale.
 * **Material You**: Beautiful pill-shaped buttons and dynamic colors.
@@ -35,6 +36,8 @@ Modern Material You calculator for Android that solves linear equations and syst
 Created by **Losoos**
 
 ## Recent Updates / Poslední změny
+* **Dashboard & Navigation**: Added a new main menu (Dashboard) for easy access to different tools.
+* **Currency Converter**: Integrated real-time currency conversion using data from the European Central Bank.
 * **Package Cleanup**: Reorganized the project structure to the professional `cz.losoos.calculator` namespace, removing all default "example" references.
 * **Test Refactoring**: Updated unit and instrumentation tests to match the new package structure.
 * **Repository Cleanup**: Removed IDE-specific files (`.idea/`) from the repository to ensure a clean codebase.
