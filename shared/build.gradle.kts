@@ -25,10 +25,6 @@ kotlin {
 
     sourceSets {
         commonMain.dependencies {
-            // Put shared dependencies here
-        }
-        commonTest.dependencies {
-            implementation(libs.junit)
         }
     }
 }

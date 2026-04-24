@@ -1,9 +1,7 @@
-name: iOS Framework Build
+name: iOS Build
 
 on:
   push:
-    branches: [ "master", "main" ]
-  pull_request:
     branches: [ "master", "main" ]
 
 jobs:
@@ -24,9 +22,10 @@ jobs:
       uses: gradle/actions/setup-gradle@v3
       with:
         gradle-version: 8.10
-        # Tímto vypneme ověřování tvého lokálního wrapperu, které hází chybu
         wrapper-validation-enabled: false
 
-    - name: Build iOS Framework
-      # Místo ./gradlew použijeme přímo gradle
+    - name: Build Shared Framework for iOS
       run: gradle :shared:assembleSharedReleaseFrameworkForIosArm64
+
+    - name: List artifacts
+      run: find shared/build/fat-framework -name "*.framework" || echo "Framework not found"
