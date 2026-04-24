@@ -1,4 +1,4 @@
-# Equation Calculator (Kalkulačka rovnic)
+# Omnicalc
 
 Modern Material You calculator for Android that solves linear equations and systems of equations.
 
